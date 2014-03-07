@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skripsi.taskreminder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/iconku"
+        android:label="@string/app_name"
+        android:theme="@style/temaku" >
+        <activity
+            android:name=".ReminderListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReminderEditActivity"
+            android:label="@string/edit_reminder_title" />
+
+        <receiver android:name="com.skripsi.taskreminder.OnAlarmReceiver" />
+
+        <service android:name="com.skripsi.taskreminder.ReminderService" />
+    </application>
+
+    <uses-sdk
+        android:maxSdkVersion="17"
+        android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

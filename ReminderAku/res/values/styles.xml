@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="TitleBackground">
+	<item name="android:background">@drawable/title_background</item>
+</style>
+
+<style name="ModelTitle">
+	<item name = "android:singleLine">true</item>
+	<item name = "android:textColor">#fff</item>
+	<item name = "android:textSize">18sp</item>
+	<item name = "android:textStyle">bold</item>
+	<item name="android:shadowColor">#BB000000</item>
+	<item name="android:shadowRadius">2.75</item>
+</style>
+
+<style name = "ModelButton"  parent="android:Widget.Button">
+	<item name = "android:textStyle">bold</item>
+	<item name = "android:textColor">#FFFFFFFF</item>
+	<item name = "android:background">@drawable/button_background</item>
+</style>
+</resources>
